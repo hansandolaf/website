@@ -97,7 +97,7 @@ body {
 
 .title {
   font-family: "komika";
-  width: 180px;
+  max-width: 210px;
   text-align: center;
   font-size: 15px;
 }

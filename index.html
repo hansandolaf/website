@@ -26,38 +26,6 @@
 </head>
 
 <body>
-  <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "108666468161165");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-  
-  
   <div id="outerlayout">
     <div id="layout">
 
@@ -78,26 +46,6 @@
       src="./res/logo.png"
       alt="logo" />    
       
-      <div class="mood">Furious battles</div>
-      <a class="item" href="https://soundcloud.com/hansandolaf/unlimitedfolie22">          
-        <img class="artwork" src="https://i1.sndcdn.com/artworks-wp18H84yaMa7GWt04-yQABFw-t500x500.jpg"> 
-        <div class="titlewrap">
-          <div class="title">Opening Nina Kraviz</div>
-          <div class="subtitle">@ Unlimited Folie</div>
-        </div>
-        <img class="playicon" src="res/playicon.svg">
-          <div class="latest">NEW</div>
-       </a>
-      
-      <a class="item" href="https://soundcloud.com/hansandolaf/manou">          
-        <img class="artwork" src="https://i1.sndcdn.com/artworks-skbJpdLHOq4pxttO-cPpoKA-t500x500.jpg"> 
-        <div class="titlewrap">
-          <div class="title">Introduction</div>
-          <div class="subtitle">@ Château de Manou</div>
-        </div>
-        <img class="playicon" src="res/playicon.svg">
-      </a>
-      
       <div class="mood">Dark matter</div>
        <a class="item" href="https://soundcloud.com/hansandolaf/unlimitedfestival22">          
         <img class="artwork" src="https://i1.sndcdn.com/artworks-QHyAFMR3pvrWB6LS-djxyzg-t500x500.jpg"> 
@@ -106,12 +54,17 @@
           <div class="subtitle">@ Unlimited Festival</div>
         </div>
         <img class="playicon" src="res/playicon.svg">
-          <div class="latest">NEW</div>
-       </a>
+        
+          <div class="latest">
+            NEW
+          </div>
+        </a>
 
       <div class="mood">Magical Tales</div>
       
       <a class="item" href="https://soundcloud.com/rituelrecordings/hans-olaf-days-podcast-023">
+
+        
           <img class="artwork" src="https://i1.sndcdn.com/artworks-a8ZglL5u7icBuvdF-YZc8xA-t500x500.jpg"> 
           <div class="titlewrap">
             <div class="title">Days podcast #24</div>
@@ -131,7 +84,17 @@
         </div>
         <img class="playicon" src="res/playicon.svg">
       </a>
-     
+
+      <div class="mood">Furious battles</div>
+      <a class="item" href="https://soundcloud.com/hansandolaf/manou">          
+        <img class="artwork" src="https://i1.sndcdn.com/artworks-skbJpdLHOq4pxttO-cPpoKA-t500x500.jpg"> 
+        <div class="titlewrap">
+          <div class="title">Introduction</div>
+          <div class="subtitle">@ Château de Manou</div>
+        </div>
+        <img class="playicon" src="res/playicon.svg">
+      </a>
+      
     </div>
   </div>
 </body>

@@ -1,0 +1,56 @@
+{
+    "events": [
+        {
+            "title": "BamJam (Dijon)",
+            "subtitle": "Downtempo to Techno",
+            "date": "18/03",
+            "img-url": "https://i.ibb.co/HVQxcyn/Group-6.png",
+            "event-url": "https://www.facebook.com/events/690206286228969"
+        },
+        {
+            "title": "TTR (Paris)",
+            "subtitle": "Downtempo to Techno",
+            "date": "18/03",
+            "img-url": "https://i.ibb.co/HVQxcyn/Group-6.png",
+            "event-url": "https://www.facebook.com/events/690206286228969"
+        },
+    ],
+    "sets": [
+        {
+            "category": "Magical Tales",
+            "sets": [
+                {
+                    "title": "Rāga #211",
+                    "subtitle": "• kośa •",
+                    "img-url": "https://i1.sndcdn.com/artworks-uTYTdxscy7J2VOxx-ZaZpvA-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/kosamusica/hans-olaf-flame-of-the-pinecone",
+                    "new": true
+                },
+                {
+                    "title": "Into The Wild #36",
+                    "subtitle": "Spiritual Nomad Records",
+                    "img-url": "https://i1.sndcdn.com/artworks-zclT1oipX9NUAcs0-koLEvw-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/spiritual-nomad-records/into-the-wild-nomadcast-36-by-hans-olaf"
+                }
+            ]
+        },
+        {
+            "category": "Furious Battles",
+            "sets": [
+                {
+                    "title": "Opening Nina Kraviz",
+                    "subtitle": "@ Unlimited Folie",
+                    "img-url": "https://i1.sndcdn.com/artworks-wp8H84yaMa7GWt04-yQABFw-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/hansandolaf/unlimitedfolie22",
+                    "new": true
+                },
+                {
+                    "title": "Introduction",
+                    "subtitle": "@ Château de Manou",
+                    "img-url": "https://i1.sndcdn.com/artworks-skbJpdLHOq4pxttO-cPpoKA-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/hansandolaf/manou"
+                }
+            ]
+        }
+    ]
+}

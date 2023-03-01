@@ -86,7 +86,7 @@
           let titles = createDOM('div',{class: 'titlewrap'});
           titles.append(createDOM('div', {class:"title"}, event.title));
           titles.append(createDOM('div', {class:"style"}, event.style));
-          titles.append(createDOM('div', {class:"location"}, "<span style='font-size: 8px'>📍 </span>" + event.location));
+          titles.append(createDOM('div', {class:"location"}, "<span style='font-size: 8px'></span>" + event.location));
           console.log(event.style, event.location)
           
           item.append(titles);

@@ -34,15 +34,15 @@
         },
         {
             "title": "Feu Folie",
-            "style": "tdb",
-            "location": "tdb",
+            "style": "Downtempo & Techno",
+            "location": "Vivoin",
             "date": "19/05",
             "img-url": "https://i.ibb.co/s20fswX/315728875-158639070210777-382712757759797804-n.jpg",
             "event-url": "https://www.facebook.com/events/510432057688203"
         },
         {
             "title": "Afesou Festival",
-            "style": "tdb",
+            "style": "Downtempo to Ethno",
             "location": "Saint Brisson /s Loire",
             "date": "26/05",
             "img-url": "https://i.ibb.co/SXckxHm/328628214-1118544225558529-52765594625959096-n.jpg",
@@ -51,7 +51,7 @@
     ],
     "sets": [
         {
-            "category": "Oragnic Mixtapes",
+            "category": "Organic Mixtapes",
             "sets": [
                 {
                     "title": "Rāga #211",

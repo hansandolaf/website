@@ -55,12 +55,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10vw auto;
+  margin: 10vh auto;
 }
 .latest {
   color: #eee;
   position: absolute;
-  left: 75%;
+  left: 78%;
   top: -10px;
   border-radius: 10px;
   background-color: black;
@@ -71,7 +71,7 @@ body {
 
 #social {
   /* padding: 3vh 0px; */
-  margin-bottom: 6vw;
+  margin-bottom: 4vh;
   width: 50%;
   display: flex;
   align-items: center;
@@ -122,34 +122,41 @@ body {
   font-family: "komika";
   width: 180px;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   color: rgb(80, 63, 88);
 }
-.style, .location {
-  font-size: 11px;
+.style {
+  font-size: 13px;
+}
+
+.location {
+  font-size: 12px;
+  /* font-weight: 00; */
+  color: #28282c !important;
+  /* color: rgb(80, 63, 88); */
 }
 
 .day {
   font-family: "komika"; 
-  font-size: 13px;
+  font-size: 14px;
   position: absolute;
   right: 42px;
-  top: 14px
+  top: 13px
 }
 .month {
   font-family: "komika"; 
-  font-size: 13px;
+  font-size: 14px;
   position: absolute;
   right: 23px;
-  top: 32px
+  top: 31px
 }
 
 .slash {
   font-family: "komika"; 
-  font-size: 11px;
+  font-size: 12px;
   position: absolute;
   right: 35px;
-  top: 23px
+  top: 22px
 }
 
 

@@ -121,10 +121,10 @@ body {
   font-family: "komika";
   width: 180px;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   color: rgb(80, 63, 88);
 }
-.location {
+.style, .location {
   font-size: 11px;
 }
 
@@ -234,7 +234,7 @@ a:active {
   body {
     background-color: #3a4250;
   }
-  .subtitle, .style {
+  .subtitle, .style, .location {
     color: #3a4250;
   }
 }

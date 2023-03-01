@@ -22,6 +22,7 @@ body {
   position: relative;
   width: 100%;
   margin: 0;
+  transition: height 1000000s ease;
 }
 
 #logo {
@@ -47,7 +48,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10vh 5vw;
+  margin: 10vh 0vw;
 }
 .latest {
   color: #eee;
@@ -206,7 +207,8 @@ a:active {
 
 .sub {
   border-radius: 30px;
-  padding: 1vh 3vw;
+  padding: 2vh;
+  margin-top: 1vh;
   font-family: "badaboom";
   font-size: 22px;
   color: #eee;

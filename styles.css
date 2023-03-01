@@ -20,7 +20,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
-  height: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -87,6 +87,10 @@ body {
   background-image: url(res/social_logos/mail.png);
 }
 
+#sc {
+  background-image: url(res/social_logos/sc.png);
+}
+
 .artwork {
   padding: 2px;
   width: 35px;
@@ -110,9 +114,33 @@ body {
   color: rgb(80, 63, 88);
 }
 
+.day {
+  font-family: "komika"; 
+  font-size: 13px;
+  position: absolute;
+  right: 42px;
+  top: 14px
+}
+.month {
+  font-family: "komika"; 
+  font-size: 13px;
+  position: absolute;
+  right: 23px;
+  top: 32px
+}
+
+.slash {
+  font-family: "komika"; 
+  font-size: 11px;
+  position: absolute;
+  right: 35px;
+  top: 23px
+}
+
+
 .playicon {
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
 }
 
 .item {
@@ -131,6 +159,9 @@ body {
   border: solid 2px black;
   min-height: 50px;
   margin-bottom: 10px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0, 3vh);
 }
 
 /* unvisited link */
@@ -166,11 +197,24 @@ a:active {
 .mood {
   border-radius: 30px;
   padding: 1vh 3vw;
+  font-family: "komika";
+  font-size: 18px;
+  color: black;
+  /* -webkit-text-stroke-width: 1px; */
+  /* -webkit-text-stroke-color: #655; */
+}
+
+.sub {
+  border-radius: 30px;
+  padding: 1vh 3vw;
   font-family: "badaboom";
-  font-size: 20px;
+  font-size: 22px;
   color: #eee;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: translate(0, 3vh);
 }
 
 @media (prefers-color-scheme: dark) {

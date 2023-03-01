@@ -3,21 +3,42 @@
         {
             "title": "BamJam (Dijon)",
             "subtitle": "Downtempo to Techno",
-            "date": "18/03",
+            "date": "03/03",
             "img-url": "https://i.ibb.co/HVQxcyn/Group-6.png",
             "event-url": "https://www.facebook.com/events/690206286228969"
         },
         {
             "title": "TTR (Paris)",
-            "subtitle": "Downtempo to Techno",
+            "subtitle": "Psytrance",
+            "date": "16/03",
+            "img-url": "https://i.ibb.co/SXckxHm/328628214-1118544225558529-52765594625959096-n.jpg",
+            "event-url": "https://www.facebook.com/events/659335289409043/659335309409041"
+        },
+        {
+            "title": "Phosphenes (Paris)",
+            "subtitle": "Slowtech to Melodic",
             "date": "18/03",
-            "img-url": "https://i.ibb.co/HVQxcyn/Group-6.png",
-            "event-url": "https://www.facebook.com/events/690206286228969"
+            "img-url": "https://i.ibb.co/WvWkjkK/332208534-1271527810374307-994725107654728083-n.jpg",
+            "event-url": "https://www.facebook.com/events/1259232484689929"
+        },
+        {
+            "title": "Feu Folie (tbd...)",
+            "subtitle": "tbd...",
+            "date": "19/05",
+            "img-url": "https://i.ibb.co/s20fswX/315728875-158639070210777-382712757759797804-n.jpg",
+            "event-url": "https://www.facebook.com/events/510432057688203"
+        },
+        {
+            "title": "Afesou Festival (Saint Brisson /s Loire)",
+            "subtitle": "tdb...",
+            "date": "26/05",
+            "img-url": "https://i.ibb.co/SXckxHm/328628214-1118544225558529-52765594625959096-n.jpg",
+            "event-url": "https://www.facebook.com/events/659335289409043/659335309409041"
         }
     ],
     "sets": [
         {
-            "category": "Magical Tales",
+            "category": "Oragnic Mixtapes",
             "sets": [
                 {
                     "title": "Rāga #211",
@@ -31,24 +52,57 @@
                     "subtitle": "Spiritual Nomad Records",
                     "img-url": "https://i1.sndcdn.com/artworks-zclT1oipX9NUAcs0-koLEvw-t500x500.jpg",
                     "set-url": "https://soundcloud.com/spiritual-nomad-records/into-the-wild-nomadcast-36-by-hans-olaf"
+                },
+                {
+                    "title": "Tales of Zahrah #23",
+                    "subtitle": "Orientaldeep",
+                    "img-url": "https://i1.sndcdn.com/artworks-i3UeWJSysvcPzo15-yAlf6Q-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/orientaldeepevents/tales-of-zahrah-023-hans-olaf"
+                },
+                {
+                    "title": "Days podcast #23",
+                    "subtitle": "Rituel Recordings",
+                    "img-url": "https://i1.sndcdn.com/artworks-a8ZglL5u7icBuvdF-YZc8xA-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/rituelrecordings/hans-olaf-days-podcast-023"
                 }
             ]
         },
         {
-            "category": "Furious Battles",
+            "category": "Furious Mixtapes",
             "sets": [
                 {
                     "title": "Opening Nina Kraviz",
                     "subtitle": "@ Unlimited Folie",
                     "img-url": "https://i1.sndcdn.com/artworks-wp8H84yaMa7GWt04-yQABFw-t500x500.jpg",
-                    "set-url": "https://soundcloud.com/hansandolaf/unlimitedfolie22",
-                    "new": true
+                    "set-url": "https://soundcloud.com/hansandolaf/unlimitedfolie22"
                 },
                 {
                     "title": "Introduction",
                     "subtitle": "@ Château de Manou",
                     "img-url": "https://i1.sndcdn.com/artworks-skbJpdLHOq4pxttO-cPpoKA-t500x500.jpg",
                     "set-url": "https://soundcloud.com/hansandolaf/manou"
+                }
+            ]
+        },
+        {
+            "category": "Dark Mixtapes",
+            "sets": [
+                {
+                    "title": "Opening Jennifer Cardini",
+                    "subtitle": "@ Unlimited Festival",
+                    "img-url": "https://i1.sndcdn.com/artworks-QHyAFMR3pvrWB6LS-djxyzg-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/hansandolaf/unlimitedfestival22"
+                }
+            ]
+        },
+        {
+            "category": "Progressive Mixtapes",
+            "sets": [
+                {
+                    "title": "Opening Township Rebellion",
+                    "subtitle": "@ Jardins Sonores",
+                    "img-url": "https://i1.sndcdn.com/artworks-J18TvFRiN726yKLz-NSTyyg-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/hansandolaf/jardins-sonores"
                 }
             ]
         }

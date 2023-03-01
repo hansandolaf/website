@@ -9,19 +9,26 @@
 }
 
 html {
-  height: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-image: url(res/back_day.png);
-  background-color: rgb(255, 179, 155);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
   margin: 0;
+  padding: 0;
+  background-color: rgb(255, 179, 155);
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh + 100px);
+  background-image: url(res/back_day.png);
+  background-size: cover;
+  z-index: -1;
 }
 
 #logo {
@@ -39,17 +46,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 100%; */
 }
 
 #layout {
-  height: 100%;
   width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10vh 0vw;
+  margin: 10vw auto;
 }
 .latest {
   color: #eee;
@@ -64,7 +69,8 @@ body {
 }
 
 #social {
-  padding: 3vh 0px;
+  /* padding: 3vh 0px; */
+  margin-bottom: 6vw;
   width: 50%;
   display: flex;
   align-items: center;
@@ -74,11 +80,11 @@ body {
 .sociallogo {
   width: 30px;
   height: 30px;
-  opacity: 80%;
+  /* opacity: 80%; */
   background-size: cover;
   opacity: 0;
   transition: all 0.6s ease-in-out;
-  transform: translate(0, -3vh);
+  transform: translate(0, -5vh);
 }
 #fb {
   background-image: url(res/social_logos/fb.png);
@@ -111,12 +117,15 @@ body {
   font-size: 15px;
 }
 
-.subtitle {
+.subtitle, .style, .location {
   font-family: "komika";
   width: 180px;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   color: rgb(80, 63, 88);
+}
+.location {
+  font-size: 11px;
 }
 
 .day {
@@ -169,6 +178,10 @@ body {
   transform: translate(0, 3vh);
 }
 
+.item:hover {
+  border-color: #fff;
+}
+
 /* unvisited link */
 a:link {
   color: black;
@@ -214,11 +227,14 @@ a:active {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #3a4250;
+  #background {
+    
     background-image: url(res/back_night.png);
   }
-  .subtitle {
+  body {
+    background-color: #3a4250;
+  }
+  .subtitle, .style {
     color: #3a4250;
   }
 }

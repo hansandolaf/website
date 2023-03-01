@@ -1,188 +1,179 @@
-<div>NO MORE</div>
-
-<!-- <!doctype html>
+<!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Hans & Olaf</title>
-  <meta name="description" content="Hans & Olaf - website and links">
-  <meta name="author" content="Olaf">
+    <title>Hans & Olaf</title>
+    <meta name="description" content="Hans & Olaf - website and links">
+    <meta name="author" content="Olaf">
 
-  <meta property="og:title" content="Hans & OLaf">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hansandolaf.com">
-  <meta property="og:description" content="Hans & Olaf - website and links">
-  <meta property="og:image" content="./res/logo.png">
+    <meta property="og:title" content="Hans & OLaf">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hansandolaf.com">
+    <meta property="og:description" content="Hans & Olaf - website and links">
+    <meta property="og:image" content="./res/logo.png">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="res/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="res/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="res/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="res/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicons/favicon-16x16.png">
 
-  <link rel="stylesheet" href="styles.css?v=1.0">
+    <link rel="stylesheet" href="styles.css?v=1.0">
 
-</head>
+  </head>
 
-<body>  
-  
-  <div id="outerlayout">
-    <div id="layout">
+  <body>  
+    <div id="background"></div>
+    <div id="outerlayout">
+      <div id="layout">
 
-      <div id="social">
-        <a href="mailto:hansandolaf@gmail.com">
-          <div class="sociallogo" id="mail"></div>
-        </a>
-        <a href="https://facebook.com/hansandolaf">
-          <div class="sociallogo" id="fb"></div>
-        </a>
-        <a href="https://instagram.com/hansandolaf">
-          <div class="sociallogo" id="ig"></div>
-        </a>
-        <a href="https://soundcloud.com/hansandolaf">
-          <div class="sociallogo" id="sc"></div>
-        </a>
+        <div id="social">
+          <a href="mailto:hansandolaf@gmail.com">
+            <div class="sociallogo" id="mail"></div>
+          </a>
+          <a href="https://facebook.com/hansandolaf">
+            <div class="sociallogo" id="fb"></div>
+          </a>
+          <a href="https://instagram.com/hansandolaf">
+            <div class="sociallogo" id="ig"></div>
+          </a>
+          <a href="https://soundcloud.com/hansandolaf">
+            <div class="sociallogo" id="sc"></div>
+          </a>
+        </div>
+        
+        <img
+        id="logo"
+        src="./res/logo.png"
+        alt="logo" />    
+        
+        <div class="sub">Next Events </div>
+        
       </div>
-      
-      <img
-      id="logo"
-      src="./res/logo.png"
-      alt="logo" />    
-      
-      <div class="sub">Next Events </div>
     </div>
-  </div>
-  <script>    
-    function createDOM(element, options, content) {
-      let e = document.createElement(element);
-      for (var key in options) {
-        e.setAttribute(key, options[key]);
-      }
-      if (content || content == 0) e.textContent = content;
-      return e;
-    }
-    function datediff(first, second) {        
-      return Math.round((second - first) / (1000 * 60 * 60 * 24));
-    }
+    <script>    
 
-
-    fetch('https://hansandolaf.com/data.json')
-    .then(res => res.json())      
-    .then(json => {
-      
-      // Creating events
-      let waittime = 0
-      for (let i in json.events) {
-        let event = json.events[i]
-        let layout = document.querySelector('#layout');
-        let item = createDOM('a', {target:"_blank", rel:"noopener noreferrer", class: 'item', href: event["event-url"]});
-        layout.append(item)
-        
-        item.append(createDOM('img',{class: 'artwork', src: event["img-url"]}));
-        let titles = createDOM('div',{class: 'titlewrap'});
-        titles.append(createDOM('div', {class:"title"}, event.title));
-        titles.append(createDOM('div', {class:"subtitle"}, event.subtitle));
-        
-        item.append(titles);
-        item.append(createDOM('div',{class: 'playicon'}));
-        let split = event.date.split('/')
-        item.append(createDOM('div',{class: 'day'}, split[0]));
-        item.append(createDOM('div',{class: 'slash'}, '/'));
-        item.append(createDOM('div',{class: 'month'}, split[1]));
-
-        let d = Date.parse(split[1] + '/' + split[0] + '/2023')
-        console.log(datediff(new Date(), d))
-        if (datediff(new Date(), d) < 7) {
-          item.append(createDOM('div', {class: 'latest'}, 'SOOOON'));
-        } else if (datediff(new Date(), d) < 15) {
-          item.append(createDOM('div', {class: 'latest'}, 'SOON'));
-        } else if (datediff(new Date(), d) < 0) {
-          item.append(createDOM('div', {class: 'latest'}, 'DONE'));
+      function createDOM(element, options, content) {
+        let e = document.createElement(element);
+        for (var key in options) {
+          e.setAttribute(key, options[key]);
         }
-        
-        // Animation
-        document.querySelector('.sub').style.opacity = 1;
-        document.querySelector('.sub').style.transform = 'translate(0, 0vh)';
-        setTimeout(() => {
-          item.style.opacity = "1"
-          item.style.transform = "translate(0, 0vh)";
-        }, i * (100) + 50)
-        waittime = i * 100 + 100;
+        if (content || content == 0) e.innerHTML = content;
+        return e;
       }
-      
-      // Creating Sets
-      for (let i in json.sets) {
+      function datediff(first, second) {        
+        return Math.round((second - first) / (1000 * 60 * 60 * 24));
+      }
+
+
+      fetch('https://hansandolaf.com/data.json')
+      .then(res => res.json())      
+      .then(json => {
         
-        let sub = createDOM('div', {class: 'sub'}, json.sets[i].category)
-        layout.append(sub)
-
-        //Animation
-        setTimeout(() => {
-          sub.style.opacity = "1"
-          sub.style.transform = "translate(0, 0vh)";
-        }, waittime + i * 100 + 100)      
-
-        
-        // For each category
-        for (let j in json.sets[i].sets) {
-
-          let set = json.sets[i].sets[j]
-          let item = createDOM('a', {target:"_blank", rel:"noopener noreferrer", class: 'item', href: set["set-url"]});
+        // Creating events
+        let waittime = 0
+        for (let i in json.events) {
+          let event = json.events[i]
+          let layout = document.querySelector('#layout');
+          let item = createDOM('a', {target:"_blank", rel:"noopener noreferrer", class: 'item', href: event["event-url"]});
           layout.append(item)
-        
-          item.append(createDOM('img',{class: 'artwork', src: set["img-url"]}));
+          
+          item.append(createDOM('img',{class: 'artwork', src: event["img-url"]}));
           let titles = createDOM('div',{class: 'titlewrap'});
-          titles.append(createDOM('div', {class:"title"}, set.title));
-          titles.append(createDOM('div', {class:"subtitle"}, set.subtitle));
+          titles.append(createDOM('div', {class:"title"}, event.title));
+          titles.append(createDOM('div', {class:"style"}, event.style));
+          titles.append(createDOM('div', {class:"location"}, "<span style='font-size: 10px'>📍 </span>" + event.location));
+          console.log(event.style, event.location)
           
           item.append(titles);
-          item.append(createDOM('img',{class: 'playicon', src:"res/playicon.svg"}));
-          if (set.new) {
-            item.append(createDOM('div', {class: 'latest'}, 'NEW'));
-          }
+          item.append(createDOM('div',{class: 'playicon'}));
+          let split = event.date.split('/')
+          item.append(createDOM('div',{class: 'day'}, split[0]));
+          item.append(createDOM('div',{class: 'slash'}, '/'));
+          item.append(createDOM('div',{class: 'month'}, split[1]));
 
+          let d = Date.parse(split[1] + '/' + split[0] + '/2023')
+          
+          if (datediff(new Date(), d) < 7) {
+            item.append(createDOM('div', {class: 'latest'}, 'SOOOON'));
+          } else if (datediff(new Date(), d) < 15) {
+            item.append(createDOM('div', {class: 'latest'}, 'SOON'));
+          } else if (datediff(new Date(), d) < 0) {
+            item.append(createDOM('div', {class: 'latest'}, 'DONE'));
+          }
+          
           // Animation
+          document.querySelector('.sub').style.opacity = 1;
+          document.querySelector('.sub').style.transform = 'translate(0, 0vh)';
           setTimeout(() => {
             item.style.opacity = "1"
             item.style.transform = "translate(0, 0vh)";
-          }, waittime + j * (100) + i * 100)
+          }, i * (100) + 50)
+          waittime = i * 100 + 100;
         }
-      }
-    })
+        
+        // Creating Sets
+        for (let i in json.sets) {
+          
+          let sub = createDOM('div', {class: 'sub'}, json.sets[i].category)
+          layout.append(sub)
 
-    // Logo Animation
-    let up = true
-    setTimeout(() => {
-      let logo = document.querySelector('#logo');
-      logo.style.opacity = '1'
-      logo.style.transform = "scale(1)"
-      document.querySelectorAll('.sociallogo').forEach(item => {
-        item.style.opacity = '1'
-        item.style.transform = "translate(0, 0vh)"
-      });
-    }, 50)
-    // let first = true
-    // setInterval(() => {
-    //   first = false
-    //   if (up) {
-    //     up = false;
-    //     logo.style.transform = "scale(1)"
-    //   } else {
-    //     up = true;
-    //     logo.style.transform = "scale(0.98)"
-    //   }
+          //Animation
+          setTimeout(() => {
+            sub.style.opacity = "1"
+            sub.style.transform = "translate(0, 0vh)";
+          }, waittime + i * 100 + 100)      
+
+          
+          // For each category
+          for (let j in json.sets[i].sets) {
+
+            let set = json.sets[i].sets[j]
+            let item = createDOM('a', {target:"_blank", rel:"noopener noreferrer", class: 'item', href: set["set-url"]});
+            layout.append(item)
+          
+            item.append(createDOM('img',{class: 'artwork', src: set["img-url"]}));
+            let titles = createDOM('div',{class: 'titlewrap'});
+            titles.append(createDOM('div', {class:"title"}, set.title));
+            titles.append(createDOM('div', {class:"subtitle"}, set.subtitle));
+            
+            item.append(titles);
+            item.append(createDOM('img',{class: 'playicon', src:"res/playicon.svg"}));
+            if (set.new) {
+              item.append(createDOM('div', {class: 'latest'}, 'NEW'));
+            }
+
+            // Animation
+            setTimeout(() => {
+              item.style.opacity = "1"
+              item.style.transform = "translate(0, 0vh)";
+            }, waittime + j * (100) + i * 100)
+          }
+        }
+      })
+
+      // Logo Animation
+      let up = true
+      setTimeout(() => {
+        let logo = document.querySelector('#logo');
+        logo.style.opacity = '1'
+        logo.style.transform = "scale(1)"
+        document.querySelectorAll('.sociallogo').forEach(item => {
+          item.style.opacity = '0.8'
+          item.style.transform = "translate(0, 0vh)"
+        });
+      }, 50)
       
-    // }, first ? 100 : 500);
-    
-    
 
-    // Changing to french when browser is fr
-    if (/^fr\b/.test(navigator.language)) {
-      document.querySelector('.sub').textContent = "Prochains Evenements"
-    }
-  </script>
-</body>
-</html> -->
+      // Changing to french when browser is fr
+      if (/^fr\b/.test(navigator.language)) {
+        document.querySelector('.sub').textContent = "Prochains Evenements"
+      }
+
+    </script>
+  </body>
+</html>

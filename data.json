@@ -1,36 +1,41 @@
 {
     "events": [
         {
-            "title": "BamJam (Dijon)",
-            "subtitle": "Downtempo to Techno",
+            "title": "BamJam",
+            "style": "Downtempo to Techno",
+            "location": "Dijon",
             "date": "03/03",
             "img-url": "https://i.ibb.co/HVQxcyn/Group-6.png",
             "event-url": "https://www.facebook.com/events/690206286228969"
         },
         {
-            "title": "TTR (Paris)",
-            "subtitle": "Psytrance",
+            "title": "TTR - Red Pill",
+            "style": "Psytrance",
+            "location": "Paris",
             "date": "16/03",
             "img-url": "https://i.ibb.co/SXckxHm/328628214-1118544225558529-52765594625959096-n.jpg",
             "event-url": "https://www.facebook.com/events/659335289409043/659335309409041"
         },
         {
-            "title": "Phosphenes (Paris)",
-            "subtitle": "Slowtech to Melodic",
+            "title": "Phosphenes",
+            "style": "Slowtech",
+            "location": "Paris",
             "date": "18/03",
             "img-url": "https://i.ibb.co/WvWkjkK/332208534-1271527810374307-994725107654728083-n.jpg",
             "event-url": "https://www.facebook.com/events/1259232484689929"
         },
         {
-            "title": "Feu Folie (tbd...)",
-            "subtitle": "tbd...",
+            "title": "Feu Folie",
+            "style": "tdb",
+            "location": "tdb",
             "date": "19/05",
             "img-url": "https://i.ibb.co/s20fswX/315728875-158639070210777-382712757759797804-n.jpg",
             "event-url": "https://www.facebook.com/events/510432057688203"
         },
         {
-            "title": "Afesou Festival (Saint Brisson /s Loire)",
-            "subtitle": "tdb...",
+            "title": "Afesou Festival",
+            "style": "tdb",
+            "location": "Saint Brisson /s Loire",
             "date": "26/05",
             "img-url": "https://i.ibb.co/SXckxHm/328628214-1118544225558529-52765594625959096-n.jpg",
             "event-url": "https://www.facebook.com/events/659335289409043/659335309409041"

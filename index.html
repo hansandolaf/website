@@ -93,7 +93,7 @@
 
         let d = Date.parse(split[1] + '/' + split[0] + '/2023')
         console.log(datediff(new Date(), d))
-        if (datediff(new Date(), d) < 20) {
+        if (datediff(new Date(), d) < 7) {
           item.append(createDOM('div', {class: 'latest'}, 'SOOOON'));
         } else if (datediff(new Date(), d) < 15) {
           item.append(createDOM('div', {class: 'latest'}, 'SOON'));

@@ -157,6 +157,10 @@
       let logo = document.querySelector('#logo');
       logo.style.opacity = '1'
       logo.style.transform = "scale(1)"
+      document.querySelectorAll('.sociallogo').forEach(item => {
+        item.style.opacity = '1'
+        item.style.transform = "translate(0, 0vh)"
+      });
     }, 50)
     // let first = true
     // setInterval(() => {

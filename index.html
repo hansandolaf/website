@@ -85,8 +85,10 @@
           item.append(createDOM('img',{class: 'artwork', src: event["img-url"]}));
           let titles = createDOM('div',{class: 'titlewrap'});
           titles.append(createDOM('div', {class:"title"}, event.title));
-          titles.append(createDOM('div', {class:"style"}, event.style));
-          titles.append(createDOM('div', {class:"location"}, "<span style='font-size: 8px'></span>" + event.location));
+          // titles.append(createDOM('div', {class:"style"}, "<span style='font-size: 11px'>♪ </span>" + event.style + "<span style='font-size: 11px'> ♪</span>"));
+          // titles.append(createDOM('div', {class:"location"}, "<span style='font-size: 8px'>📍 </span>" + event.location + "<span style='font-size: 8px'> 📍</span>"));
+          titles.append(createDOM('div', {class:"style"}, "<span style='font-size: 11px'></span>" + event.style + "<span style='font-size: 11px'></span>"));
+          titles.append(createDOM('div', {class:"location"}, "<span style='font-size: 8px'></span>" + event.location + "<span style='font-size: 8px'></span>"));
           console.log(event.style, event.location)
           
           item.append(titles);

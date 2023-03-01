@@ -97,6 +97,8 @@
           item.append(createDOM('div', {class: 'latest'}, 'SOOOON'));
         } else if (datediff(new Date(), d) < 15) {
           item.append(createDOM('div', {class: 'latest'}, 'SOON'));
+        } else if (datediff(new Date(), d) < 0) {
+          item.append(createDOM('div', {class: 'latest'}, 'DONE'));
         }
         
         // Animation
@@ -148,6 +150,28 @@
         }
       }
     })
+
+    // Logo Animation
+    let up = true
+    setTimeout(() => {
+      let logo = document.querySelector('#logo');
+      logo.style.opacity = '1'
+      logo.style.transform = "scale(1)"
+    }, 50)
+    // let first = true
+    // setInterval(() => {
+    //   first = false
+    //   if (up) {
+    //     up = false;
+    //     logo.style.transform = "scale(1)"
+    //   } else {
+    //     up = true;
+    //     logo.style.transform = "scale(0.98)"
+    //   }
+      
+    // }, first ? 100 : 500);
+    
+    
 
     // Changing to french when browser is fr
     if (/^fr\b/.test(navigator.language)) {

@@ -112,7 +112,6 @@
           
           if (datediff(new Date(), d) < 0) {
             item.append(createDOM('div', {class: 'latest'}, 'DONE'));
-            item.style.opacity = 0.6
           } else if (datediff(new Date(), d) < 7) {
             item.append(createDOM('div', {class: 'latest', style: 'left:75%'}, 'SOOOON'));
           } else if (datediff(new Date(), d) < 15) {
@@ -124,6 +123,9 @@
           document.querySelector('.sub').style.transform = 'translate(0, 0vh)';
           setTimeout(() => {
             item.style.opacity = "1"
+            if (!done) {
+              item.style.opacity = "0.6"
+            }
             item.style.transform = "translate(0, 0vh)";
           }, i * (100) + 50)
           waittime = i * 100 + 100;
@@ -137,10 +139,7 @@
 
           //Animation
           setTimeout(() => {
-            sub.style.opacity = "0.6"
-            if (!done) {
-              sub.style.opacity = "1"
-            }
+            sub.style.opacity = "1"
             sub.style.transform = "translate(0, 0vh)";
           }, waittime + i * 100 + 100)      
 

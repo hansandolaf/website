@@ -84,9 +84,11 @@
           
           let split = event.date.split('/')
 
-
+        
           let d = Date.parse(split[1] + '/' + split[0] + '/2023')
+          let done = false;
           if (datediff(new Date(), d) < -7) {
+            done = true;
             continue;
           }
           
@@ -135,7 +137,10 @@
 
           //Animation
           setTimeout(() => {
-            sub.style.opacity = "1"
+            sub.style.opacity = "0.6"
+            if (!done) {
+              sub.style.opacity = "1"
+            }
             sub.style.transform = "translate(0, 0vh)";
           }, waittime + i * 100 + 100)      
 

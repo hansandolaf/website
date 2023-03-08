@@ -80,6 +80,8 @@
         let layout = document.querySelector('#layout');
         for (let i in json.events) {
           
+          let event = json.events[i]
+          
           let split = event.date.split('/')
           item.append(createDOM('div',{class: 'day'}, split[0]));
           item.append(createDOM('div',{class: 'slash'}, '/'));
@@ -90,7 +92,7 @@
             continue;
           }
           
-          let event = json.events[i]
+
           let item = createDOM('a', {target:"_blank", rel:"noopener noreferrer", class: 'item', href: event["event-url"]});
           layout.append(item)
           

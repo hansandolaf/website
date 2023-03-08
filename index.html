@@ -81,19 +81,15 @@
         for (let i in json.events) {
           
           let event = json.events[i]
-          
           let split = event.date.split('/')
-
-        
+                
           let d = Date.parse(split[1] + '/' + split[0] + '/2023')
-          let done = false;
-          if (datediff(new Date(), d) < -7) {
-            done = true;
+          if (datediff(new Date(), d) < -5) {
             continue;
           }
-          
 
           let item = createDOM('a', {target:"_blank", rel:"noopener noreferrer", class: 'item', href: event["event-url"]});
+          
           layout.append(item)
           
           item.append(createDOM('img',{class: 'artwork', src: event["img-url"]}));
@@ -101,7 +97,7 @@
           titles.append(createDOM('div', {class:"title"}, event.title));
           titles.append(createDOM('div', {class:"location"}, event.location.toUpperCase()));
           titles.append(createDOM('div', {class:"style"}, event.style));
-          console.log(event.style, event.location)
+          // console.log(event.style, event.location)
           
           item.append(titles);
           item.append(createDOM('div',{class: 'playicon'}));
@@ -112,6 +108,7 @@
           
           if (datediff(new Date(), d) < 0) {
             item.append(createDOM('div', {class: 'latest'}, 'DONE'));
+            item.setAttribute('done', true);
           } else if (datediff(new Date(), d) < 7) {
             item.append(createDOM('div', {class: 'latest', style: 'left:75%'}, 'SOOOON'));
           } else if (datediff(new Date(), d) < 15) {
@@ -123,8 +120,10 @@
           document.querySelector('.sub').style.transform = 'translate(0, 0vh)';
           setTimeout(() => {
             item.style.opacity = "1"
-            if (!done) {
-//               item.style.opacity = "0.5"
+            console.log(item)
+            if (item.getAttribute('done')) {
+              
+              item.style.opacity = "0.5"
             }
             item.style.transform = "translate(0, 0vh)";
           }, i * (100) + 50)

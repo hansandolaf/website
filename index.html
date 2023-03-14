@@ -108,7 +108,7 @@
           
           
           if (event.cancelled) {
-            item.append(createDOM('div', {class: 'latest'}, 'CANCELLED'));
+            item.append(createDOM('div', {class: 'latest', style: 'left:74%'}, 'CANCELLED'));
             item.setAttribute('done', true);
           } else {
             if (datediff(new Date(), d) < 0) {

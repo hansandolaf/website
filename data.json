@@ -22,7 +22,8 @@
             "location": "Paris",
             "date": "16/03",
             "img-url": "https://i.ibb.co/SXckxHm/328628214-1118544225558529-52765594625959096-n.jpg",
-            "event-url": "https://www.facebook.com/events/659335289409043/659335309409041"
+            "event-url": "https://www.facebook.com/events/659335289409043/659335309409041",
+            "cancelled": "true",
         },
         {
             "title": "Phosphenes",

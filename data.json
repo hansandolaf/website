@@ -29,12 +29,19 @@
         {
             "category": "Organic Mixtapes",
             "sets": [
+                 {
+                    "title": "C๏sʍ๏cast ★ 181",
+                    "subtitle": "Cosmovision Records",
+                    "img-url": "https://i.ibb.co/WzSSMYt/cosmovision.png",
+                    "set-url": "https://soundcloud.com/cosmovisionrecords/cosmocast-181-hans-olaf-the-extraordinary-garden-of-the-useless",
+                    "new": true
+                },
                 {
                     "title": "Rāga #211",
                     "subtitle": "• kośa •",
                     "img-url": "https://i1.sndcdn.com/artworks-uTYTdxscy7J2VOxx-ZaZpvA-t500x500.jpg",
                     "set-url": "https://soundcloud.com/kosamusica/hans-olaf-flame-of-the-pinecone",
-                    "new": true
+                    "new": false
                 },
                 {
                     "title": "Into The Wild #36",

@@ -65,20 +65,26 @@
       let timeout = null;
       let first = true;
       document.querySelector('#logo').addEventListener("click", function() { 
+        let outch = document.querySelector('.outch')
+        let outchsquare = document.querySelector('.outch.outchsquare')
+
+        // if (timeout) return;
+        clearTimeout(timeout)
+        timeout = setTimeout(function() { 
+          outch.setAttribute('style', 'opacity: 0');
+          setTimeout(function() {
+            outchsquare.setAttribute('style', 'opacity: 0');
+            first = true;
+          }, 1000)
+        }, 2000);
+        
+        // if (timeout) return;
+        
         if (first) {
           first = false;
-          let outch = document.querySelector('.outch')
           outch.setAttribute('style', 'opacity: 1');
-          setTimeout(function () {
-            outch.setAttribute('style', 'opacity: 0');
-          }, 2000)
         } else {
-          let outchsquare = document.querySelector('.outch.outchsquare')
           outchsquare.setAttribute('style', 'opacity: 1');
-          first = true;
-          setTimeout(function () {
-            outchsquare.setAttribute('style', 'opacity: 0');
-          }, 3000)
         }
         
       });

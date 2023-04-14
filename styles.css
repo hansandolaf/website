@@ -234,6 +234,19 @@ a:active {
   transform: translate(0, 3vh);
 }
 
+.outch {
+  top: 16vh;
+  height: 45px;
+  margin-left: 180px;
+  position: absolute;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+}
+.outchsquare {
+  margin-left: -200px;
+  top: 18vh;
+}
+
 @media (prefers-color-scheme: dark) {
   #background {
     
@@ -246,3 +259,5 @@ a:active {
     color: #3a4250;
   }
 }
+
+

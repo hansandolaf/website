@@ -50,13 +50,38 @@
         <img
         id="logo"
         src="./res/logo.png"
-        alt="logo" />    
+        alt="logo" />
+        
+        <img src="./res/outch.png" class="outch"/>
+        <img src="./res/f**k.png" class="outch outchsquare"/>
         
         <div class="sub">Next Events </div>
         
       </div>
     </div>
     <script>    
+
+      // Simple bubble interaction
+      let timeout = null;
+      let first = true;
+      document.querySelector('#logo').addEventListener("click", function() { 
+        if (first) {
+          first = false;
+          let outch = document.querySelector('.outch')
+          outch.setAttribute('style', 'opacity: 1');
+          setTimeout(function () {
+            outch.setAttribute('style', 'opacity: 0');
+          }, 2000)
+        } else {
+          let outchsquare = document.querySelector('.outch.outchsquare')
+          outchsquare.setAttribute('style', 'opacity: 1');
+          first = true;
+          setTimeout(function () {
+            outchsquare.setAttribute('style', 'opacity: 0');
+          }, 3000)
+        }
+        
+      });
 
       function createDOM(element, options, content) {
         let e = document.createElement(element);
@@ -128,7 +153,6 @@
           document.querySelector('.sub').style.transform = 'translate(0, 0vh)';
           setTimeout(() => {
             item.style.opacity = "1"
-            console.log(item)
             if (item.getAttribute('done')) {
               
               item.style.opacity = "0.5"

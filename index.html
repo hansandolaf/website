@@ -62,23 +62,21 @@
     <script>    
 
       // Simple bubble interaction
-      let timeout = null;
+      let t1 = null, t2 = null ;
       let first = true;
       document.querySelector('#logo').addEventListener("click", function() { 
         let outch = document.querySelector('.outch')
         let outchsquare = document.querySelector('.outch.outchsquare')
 
-        // if (timeout) return;
-        clearTimeout(timeout)
-        timeout = setTimeout(function() { 
+        clearTimeout(t1);
+        clearTimeout(t2);
+        t1 = setTimeout(function() { 
           outch.setAttribute('style', 'opacity: 0');
-          setTimeout(function() {
-            outchsquare.setAttribute('style', 'opacity: 0');
-            first = true;
-          }, 1000)
         }, 2000);
-        
-        // if (timeout) return;
+        t2 = setTimeout(function() {
+          outchsquare.setAttribute('style', 'opacity: 0');
+          first = true;
+        }, 3000)
         
         if (first) {
           first = false;

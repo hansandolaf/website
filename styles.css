@@ -13,6 +13,7 @@
   }
 
 html {
+  -webkit-font-smoothing: antialiased;
   height: 100vh;
   margin: 0;
   padding: 0;

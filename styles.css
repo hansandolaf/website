@@ -8,6 +8,10 @@
   src: url("res/fonts/komika.ttf");
 }
 
+  * {
+      touch-action: manipulation;
+  }
+
 html {
   height: 100vh;
   margin: 0;

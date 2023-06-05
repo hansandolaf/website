@@ -74,7 +74,7 @@
                     "subtitle": "Cosmovision Records",
                     "img-url": "https://i.ibb.co/WzSSMYt/cosmovision.png",
                     "set-url": "https://soundcloud.com/cosmovisionrecords/cosmocast-181-hans-olaf-the-extraordinary-garden-of-the-useless",
-                    "new": true
+                    "new": false
                 },
                 {
                     "title": "Rāga #211",
@@ -106,6 +106,13 @@
         {
             "category": "Furious Mixtapes",
             "sets": [
+                {
+                    "title": "Spring Madness",
+                    "subtitle": "@ Feu Folie",
+                    "img-url": "https://imgbb.com/"><img src="https://i.ibb.co/bB9zXyK/loh-manou-feufolie.jpg",
+                    "set-url": "https://soundcloud.com/hansandolaf/feufolie"
+                    "new": true
+                },
                 {
                     "title": "Opening Nina Kraviz",
                     "subtitle": "@ Unlimited Folie",

@@ -67,6 +67,30 @@
     ],
     "sets": [
         {
+            "category": "Furious Mixtapes",
+            "sets": [
+                {
+                    "title": "Spring Madness",
+                    "subtitle": "@ Feu Folie",
+                    "img-url": "https://i.ibb.co/bB9zXyK/loh-manou-feufolie.jpg",
+                    "set-url": "https://soundcloud.com/hansandolaf/feufolie"
+                    "new": true
+                },
+                {
+                    "title": "Opening Nina Kraviz",
+                    "subtitle": "@ Unlimited Folie",
+                    "img-url": "https://i1.sndcdn.com/artworks-wp8H84yaMa7GWt04-yQABFw-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/hansandolaf/unlimitedfolie22"
+                },
+                {
+                    "title": "Introduction",
+                    "subtitle": "@ Château de Manou",
+                    "img-url": "https://i1.sndcdn.com/artworks-skbJpdLHOq4pxttO-cPpoKA-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/hansandolaf/manou"
+                }
+            ]
+        },
+        {
             "category": "Organic Mixtapes",
             "sets": [
                  {
@@ -100,30 +124,6 @@
                     "subtitle": "Rituel Recordings",
                     "img-url": "https://i1.sndcdn.com/artworks-a8ZglL5u7icBuvdF-YZc8xA-t500x500.jpg",
                     "set-url": "https://soundcloud.com/rituelrecordings/hans-olaf-days-podcast-023"
-                }
-            ]
-        },
-        {
-            "category": "Furious Mixtapes",
-            "sets": [
-                {
-                    "title": "Spring Madness",
-                    "subtitle": "@ Feu Folie",
-                    "img-url": "https://i.ibb.co/bB9zXyK/loh-manou-feufolie.jpg",
-                    "set-url": "https://soundcloud.com/hansandolaf/feufolie"
-                    "new": true
-                },
-                {
-                    "title": "Opening Nina Kraviz",
-                    "subtitle": "@ Unlimited Folie",
-                    "img-url": "https://i1.sndcdn.com/artworks-wp8H84yaMa7GWt04-yQABFw-t500x500.jpg",
-                    "set-url": "https://soundcloud.com/hansandolaf/unlimitedfolie22"
-                },
-                {
-                    "title": "Introduction",
-                    "subtitle": "@ Château de Manou",
-                    "img-url": "https://i1.sndcdn.com/artworks-skbJpdLHOq4pxttO-cPpoKA-t500x500.jpg",
-                    "set-url": "https://soundcloud.com/hansandolaf/manou"
                 }
             ]
         },

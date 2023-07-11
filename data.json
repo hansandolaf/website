@@ -67,6 +67,50 @@
     ],
     "sets": [
         {
+            "category": "Organic Mixtapes",
+            "sets": [
+                {
+                    "title": "Mixtape #224",
+                    "subtitle": "Baikal Nomads",
+                    "img-url": "https://i.ibb.co/9WXgRjd/Capture-d-cran-2023-07-11-10-24-14.png",
+                    "set-url": "https://soundcloud.com/baikalnomads/mixtape-224-by-hans-olaf",
+                    "new": true
+                },
+                {
+                    "title": "C๏sʍ๏cast ★ 181",
+                    "subtitle": "Cosmovision Records",
+                    "img-url": "https://i.ibb.co/WzSSMYt/cosmovision.png",
+                    "set-url": "https://soundcloud.com/cosmovisionrecords/cosmocast-181-hans-olaf-the-extraordinary-garden-of-the-useless",
+                    "new": false
+                },
+                {
+                    "title": "Rāga #211",
+                    "subtitle": "• kośa •",
+                    "img-url": "https://i1.sndcdn.com/artworks-uTYTdxscy7J2VOxx-ZaZpvA-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/kosamusica/hans-olaf-flame-of-the-pinecone",
+                    "new": false
+                },
+                {
+                    "title": "Into The Wild #36",
+                    "subtitle": "Spiritual Nomad Records",
+                    "img-url": "https://i1.sndcdn.com/artworks-zclT1oipX9NUAcs0-koLEvw-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/spiritual-nomad-records/into-the-wild-nomadcast-36-by-hans-olaf"
+                },
+                {
+                    "title": "Tales of Zahrah #23",
+                    "subtitle": "Orientaldeep",
+                    "img-url": "https://i1.sndcdn.com/artworks-i3UeWJSysvcPzo15-yAlf6Q-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/orientaldeepevents/tales-of-zahrah-023-hans-olaf"
+                },
+                {
+                    "title": "Days podcast #23",
+                    "subtitle": "Rituel Recordings",
+                    "img-url": "https://i1.sndcdn.com/artworks-a8ZglL5u7icBuvdF-YZc8xA-t500x500.jpg",
+                    "set-url": "https://soundcloud.com/rituelrecordings/hans-olaf-days-podcast-023"
+                }
+            ]
+        },
+        {
             "category": "Furious Mixtapes",
             "sets": [
                 {
@@ -93,7 +137,7 @@
         {
             "category": "Organic Mixtapes",
             "sets": [
-                 {
+                {
                     "title": "C๏sʍ๏cast ★ 181",
                     "subtitle": "Cosmovision Records",
                     "img-url": "https://i.ibb.co/WzSSMYt/cosmovision.png",

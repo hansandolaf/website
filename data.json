@@ -1,10 +1,25 @@
 {
     "events": [
         {
+            "title": "NSFW",
+            "style": "Melodic techno",
+            "location": "Secret place in Paris",
+            "date": "02/09",
+            "img-url": "https://i.ibb.co/JQt2sxK/Capture-d-cran-2023-08-23-20-09-36.png",
+        },
+        {
+            "title": "La Rentrée de la Fesste",
+            "style": "Techno & Psytrance",
+            "location": "Alençon",
+            "date": "29/09",
+            "img-url": "https://i.ibb.co/Ks557s8/349317641-967199484707755-1918742470987019965-n.jpg",
+            "event-url": "https://www.facebook.com/events/810867543553888"
+        },
+        {
             "title": "Havre de Perche x O'Tawa",
-            "style": "Downtempo & Organic house",
+            "style": "Downtempo to Ethno",
             "location": "Secret place near Dijon",
-            "date": "12-15/10",
+            "date": "13/10",
             "img-url": "https://i.ibb.co/3dwcCjW/Capture-d-cran-2023-08-23-19-56-16.png",
             "event-url": "https://www.facebook.com/events/s/new-moon-retreat-𝑯𝒂𝒗𝒓𝒆-𝒅𝒆-𝑷𝒆𝒓𝒄/684599606416533/"
         },

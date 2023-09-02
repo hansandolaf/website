@@ -139,7 +139,7 @@
             item.append(createDOM('div', {class: 'latest', style: 'left:74%'}, 'CANCELLED'));
             item.setAttribute('done', true);
           } else {
-            if (datediff(new Date(), d) < 0) {
+            if (datediff(new Date(), d) < -1) {
               item.append(createDOM('div', {class: 'latest'}, 'DONE'));
               item.setAttribute('done', true);
             } else if (datediff(new Date(), d) < 7) {

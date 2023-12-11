@@ -1,44 +1,28 @@
 {
     "events": [
         {
-            "title": "Techno Village",
-            "style": "Melodic & Minimal Techno",
-            "location": "Gambetta Club",
-            "date": "27/10",
-            "img-url": "https://i.ibb.co/rM0y5RR/Capture-d-cran-2023-10-20-12-56-27.png",
-            "event-url": "https://www.facebook.com/events/340770638608015"
-        },
-        {
-            "title": "La Dark Fesste",
-            "style": "Various styles",
-            "location": "Ile-de-France (77)",
-            "date": "24/11",
-            "img-url": "https://i.ibb.co/r4SF7hq/331430157-1294611594451642-5429082878234982381-n.jpg",
-            "event-url": "https://www.facebook.com/events/1374267733493767/"
-        },
-        {
             "title": "Providence",
-            "style": "Minimale techno & Psytech",
+            "style": "Psytechno & Psytrance",
             "location": "Fleurus (Paris)",
             "date": "15/12",
             "img-url": "https://i.ibb.co/LSPpXK8/Annonce-carr.png",
             "event-url": "https://fb.me/e/43uBXhxga"
         },
         {
-            "title": "Beltaine de la Fesste",
-            "style": "Downtempo & Techno",
-            "location": "Alençon",
-            "date": "05/05",
-            "img-url": "https://i.ibb.co/jG5yzYt/322459717-2372983209537534-3727904983908468373-n.jpg",
-            "event-url": "https://www.facebook.com/events/209403621685932/"
+            "title": "Joyeux Bordel",
+            "style": "Melodic & Minimal techno",
+            "location": "Cinéart (Nanterre)",
+            "date": "16/12",
+            "img-url": "https://i.ibb.co/pP4m6c1/290731846-560658398845141-6632741167409397224-n.jpg",
+            "event-url": "https://www.facebook.com/events/6453057468133541/"
         },
         {
-            "title": "Feu Folie",
-            "style": "Downtempo & Techno",
-            "location": "Vivoin",
-            "date": "19/05",
+            "title": "Crypte Tonique",
+            "style": "Psytech",
+            "location": "Caves Saint Sabin (Paris)",
+            "date": "22/12",
             "img-url": "https://i.ibb.co/tP1rsbN/332848919-1131580170849717-3564322383826745657-n.jpg",
-            "event-url": "https://www.facebook.com/events/510432057688203"
+            "event-url": "https://www.facebook.com/events/s/la-crypte-tonique/365604569355278/"
         },
         {
             "title": "Afesou Festival",
